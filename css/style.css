@@ -245,3 +245,24 @@ body {
 .footer {
   background-color: #101d2c;
   grid-column: full-start / full-end; }
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  padding: 8rem;
+  gap: 2.5rem;
+  align-items: center; }
+  .nav_item {
+    list-style: none; }
+  .nav_link:link, .nav_link:visited {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 2rem;
+    text-align: center;
+    display: block;
+    transition: .2s; }
+  .nav_link:hover, .nav_link:active {
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-3px); }

@@ -2,3 +2,34 @@
     background-color: $color-secondary;
     grid-column: full-start / full-end;
 }
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    padding: 8rem;
+    gap: 2.5rem;
+    align-items: center;
+    
+    &_item {
+        list-style: none;
+        
+    }
+
+    &_link:link,
+    &_link:visited  {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.6rem;
+        font-family: $font-display;
+        padding: 2rem;
+        text-align: center;
+        display: block;
+        transition: .2s;
+    }
+
+    &_link:hover,
+    &_link:active {
+        background-color: rgba($color: #fff, $alpha: 0.5);
+        transform: translateY(-3px);
+    }
+}
