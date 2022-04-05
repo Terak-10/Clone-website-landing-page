@@ -42,6 +42,8 @@ body {
   font-size: 1.9rem; }
   .heading-4--dark {
     color: #101d2c; }
+  .heading-4--light {
+    color: #f9f7f6; }
 
 .btn {
   border: none;
@@ -120,7 +122,24 @@ body {
 
 .realtors {
   background-color: #101d2c;
-  grid-column: col-start 7 / full-end; }
+  grid-column: col-start 7 / full-end;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  row-gap: 2rem; }
+
+.box {
+  display: grid;
+  grid-template-columns: min-content max-content;
+  column-gap: 2rem;
+  row-gap: 2vw;
+  align-items: center; }
+  .box_img {
+    width: 7rem;
+    border-radius: 50%; }
+  .box_p {
+    color: #aaa; }
 
 .features {
   grid-column: center-start / center-end;
