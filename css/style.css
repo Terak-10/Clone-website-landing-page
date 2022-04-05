@@ -21,6 +21,11 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400; }
 
+.heading-1 {
+  font-size: 4.5rem;
+  color: #f9f7f6;
+  line-height: 1; }
+
 .heading-2 {
   font-size: 4rem;
   font-style: italic;
@@ -29,7 +34,7 @@ body {
     color: #101d2c; }
 
 .heading-3 {
-  font-size: 1rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
   color: #c69963; }
 
@@ -65,11 +70,20 @@ body {
 .sidebar {
   background-color: #c69963;
   grid-column: sidebar-start / sidebar-end;
-  grid-row: 1 / -1; }
+  grid-row: 1 / -1;
+  text-align: end; }
+
+.hamburger {
+  position: fixed; }
+  .hamburger_icon {
+    margin: 2rem; }
 
 .header {
   background-color: #54483A;
-  grid-column: full-start / col-end 6; }
+  grid-column: full-start / col-end 6;
+  display: grid; }
+  .header_logo {
+    height: 3rem; }
 
 .realtors {
   background-color: #101d2c;
