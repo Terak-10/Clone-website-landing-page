@@ -14,6 +14,8 @@ $color-grey-dark-2: #6D5D4B;
 $font-primary: 'Nunito', sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
 
+// Break points 
+$bp-lg: 62.5em;
 
 *,*::before, *::after {
     box-sizing: border-box;
@@ -23,6 +25,9 @@ $font-display: 'Josefin Sans', sans-serif;
 
 html {
     font-size: 62.5%;
+    @media (max-width: $bp-lg) {
+        font-size: 50%;
+    }
 }
 
 body {
@@ -33,12 +38,16 @@ body {
 }
 
 
-
 .container {
     display: grid;
     grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
     grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8,
     [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 
+    @media (max-width: $bp-lg) {
+        grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8,
+                               [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+         grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);                               
+    }
    
 }
