@@ -13,3 +13,6 @@ This is a challenge for me. When after the first 4 "projects" in which I found o
 3. npm run start 
 
 &ENJOY
+
+
+LIVE SERVER = https://nexter-ld.netlify.app/
