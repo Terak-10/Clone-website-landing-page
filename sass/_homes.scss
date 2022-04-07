@@ -1,7 +1,6 @@
 .homes {
     grid-column: center-start / center-end;
     margin: 10rem 0;
-
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
     gap: 7rem;
@@ -46,7 +45,6 @@
         margin: 1rem;
         cursor: pointer;
     }
-
 
     &_location,
     &_rooms {
